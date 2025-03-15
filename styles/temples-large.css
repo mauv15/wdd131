@@ -1,0 +1,19 @@
+/* temples-large.css - Styles for larger screens */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
