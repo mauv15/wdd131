@@ -1,4 +1,3 @@
-// temples.js - JavaScript for navigation and footer updates
 document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById("year");
     const lastModifiedSpan = document.getElementById("lastModified");
