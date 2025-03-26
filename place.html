@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/mexico-banner-1.avif" media="(min-width: 768px)">
+                <img src="images/mexico-banner-1.avif" alt="Mexico landscape">
+            </picture>
+        </section>
+        
+        <section class="info-weather-container">
+            <section class="info-container">
+                <div>
+                    <h2>Data</h2>
+                </div>    
+                <div>
+                    <p><strong>Area:</strong> 1,964,375 sq km</p>
+                    <p><strong>Population:</strong> 126,190,788</p>
+                    <p><strong>Capital:</strong> Mexico City</p>
+                    <p><strong>Languages:</strong> Spanish</p>
+                    <p><strong>Currency:</strong> Mexican Peso (MXN)</p>
+                    <p><strong>Time Zone:</strong> UTC-6 to UTC-8 (varies by region)</p>
+                    <p><strong>Calling Code:</strong> +52</p>
+                    <p><strong>Internet TLD:</strong> .mx</p>
+
+                </div>
+            </section>
+                
+            <section class="weather-container">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <p>Temperature: <span id="temp">22</span>°C</p>
+                <p>Wind Speed: <span id="wind">15</span> km/h</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> - Mauricio Vera - Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    
+    <script src="scripts/place.js"></script>
+</body>
+</html>
