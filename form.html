@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <!-- Product Name Dropdown -->
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <!-- Dynamic options will be added here -->
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label for="rating1">1</label>
+        <input type="radio" id="rating1" name="rating" value="1" required />
+        <label for="rating2">2</label>
+        <input type="radio" id="rating2" name="rating" value="2" />
+        <label for="rating3">3</label>
+        <input type="radio" id="rating3" name="rating" value="3" />
+        <label for="rating4">4</label>
+        <input type="radio" id="rating4" name="rating" value="4" />
+        <label for="rating5">5</label>
+        <input type="radio" id="rating5" name="rating" value="5" />
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installationDate">Date of Installation:</label>
+      <input type="date" id="installationDate" name="installationDate" required />
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label for="feature1">Durability</label>
+        <input type="checkbox" id="feature1" name="features" value="feature1" />
+        <label for="feature2s">Ease of use</label>
+        <input type="checkbox" id="feature2" name="features" value="feature2" />
+        <label for="feature3">Performance</label>
+        <input type="checkbox" id="feature3" name="features" value="feature3" />
+        <label for="feature4">Design</label>
+        <input type="checkbox" id="feature4" name="features" value="feature4" />
+        
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review"></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name:</label>
+      <input type="text" id="userName" name="userName" />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Mauricio Vera | WDD 131</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
