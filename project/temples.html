@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples Around the World</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Temple Pathways</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="form.html">Share Your Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Temples Around the World</h2>
+
+    <label for="region-filter" class="filter-label">Filter by region:</label>
+    <select id="region-filter">
+      <option value="all">All</option>
+      <option value="usa">United States</option>
+      <option value="mexico">Mexico</option>
+      <option value="europe">Europe</option>
+      <option value="asia">Asia</option>
+    </select>
+
+    <div class="temple-grid">
+      <div class="temple-card" data-region="usa">
+        <img src="images/manti-temple.jpg" alt="Manti Temple" loading="lazy">
+        <h3>Manti Utah Temple</h3>
+        <p>A historic temple in central Utah known for its pioneer craftsmanship and spiritual legacy.</p>
+      </div>
+
+      <div class="temple-card" data-region="usa">
+        <img src="images/logan-temple.jpg" alt="Logan Temple" loading="lazy">
+        <h3>Logan Utah Temple</h3>
+        <p>One of the earliest temples, built with devotion by early settlers in the Cache Valley.</p>
+      </div>
+
+      <div class="temple-card" data-region="mexico">
+        <img src="images/tijuana-temple.jpg" alt="Tijuana Mexico Temple" loading="lazy">
+        <h3>Tijuana Mexico Temple</h3>
+        <p>Located near the U.S. border, this temple serves Saints in Baja California with beauty and purpose.</p>
+      </div>
+
+      <div class="temple-card" data-region="mexico">
+        <img src="images/mexico-city-temple.jpg" alt="Mexico City Temple" loading="lazy">
+        <h3>Mexico City Temple</h3>
+        <p>One of the largest temples, serving millions in a vibrant and faith-filled city.</p>
+      </div>
+
+      <div class="temple-card" data-region="usa">
+        <img src="images/Chicago-Temple.jpg" alt="Chicago Temple" loading="lazy">
+        <h3>Chicago Illinois Temple</h3>
+        <p>Standing tall in the Midwest, this temple is a peaceful refuge in a bustling region.</p>
+      </div>
+
+      <div class="temple-card" data-region="usa">
+        <img src="images/boston-temple.jpg" alt="Boston Temple" loading="lazy">
+        <h3>Boston Massachusetts Temple</h3>
+        <p>The first temple in New England, blending classic architecture with modern beauty.</p>
+      </div>
+
+      <div class="temple-card" data-region="asia">
+        <img src="images/sapporo_japan_temple.webp" alt="Sapporo Japan Temple" loading="lazy">
+        <h3>Sapporo Japan Temple</h3>
+        <p>Located in the northern city of Sapporo, this temple stands as a symbol of faith and peace in Japan's beautiful Hokkaido region.</p>
+      </div>
+      
+      <div class="temple-card" data-region="asia">
+        <img src="images/bengaluru_india_temple.webp" alt="Bengaluru India Temple" loading="lazy">
+        <h3>Bengaluru India Temple</h3>
+        <p>As the first temple in India, it represents a significant milestone for members in South Asia, bringing hope and blessings closer to home.</p>
+      </div>
+      
+      <div class="temple-card" data-region="europe">
+        <img src="images/rome_italy_temple.webp" alt="Rome Italy Temple" loading="lazy">
+        <h3>Rome Italy Temple</h3>
+        <p>Surrounded by ancient history, this stunning temple in Rome serves as a spiritual beacon in the heart of Europe.</p>
+      </div>
+
+      <div class="temple-card" data-region="usa">
+        <img src="images/philadelphia-pennsylvania-temple.jpg" alt="Philadelphia Pennsylvania Temple" loading="lazy">
+        <h3>Philadelphia Pennsylvania Temple</h3>
+        <p>Located near the birthplace of the nation, this elegant temple reflects America’s heritage and spiritual strength.</p>
+      </div>
+      
+      <div class="temple-card" data-region="asia">
+        <img src="images/yigo_guam_temple.jpg" alt="Yigo Guam Temple" loading="lazy">
+        <h3>Yigo Guam Temple</h3>
+        <p>The first temple in Guam, serving as a serene sanctuary for Saints across the Western Pacific.</p>
+      </div>
+      
+      <div class="temple-card" data-region="usa">
+        <img src="images/fort-collins-colorado-temple.jpg" alt="Fort Collins Colorado Temple" loading="lazy">
+        <h3>Fort Collins Colorado Temple</h3>
+        <p>Nestled near the foothills of the Rockies, this temple offers peace and beauty to Saints in northern Colorado.</p>
+      </div>      
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Mauricio Vera - Temple Pathways</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

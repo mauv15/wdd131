@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Share Your Temple Experience</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Temple Pathways</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="form.html">Share Your Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Share Your Temple Experience</h2>
+    <form id="experienceForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="temple">Temple Visited:</label>
+      <select id="temple" name="temple" required>
+        <option value="">--Select a Temple--</option>
+        <option value="Bengaluru India Temple">Bengaluru India Temple</option>
+        <option value="Boston Massachusetts Temple">Boston Massachusetts Temple</option>
+        <option value="Chicago Illinois Temple">Chicago Illinois Temple</option>
+        <option value="Fort Collins Colorado Temple">Fort Collins Colorado Temple</option>
+        <option value="Laie Hawaii Temple">Laie Hawaii Temple</option>
+        <option value="Logan Utah Temple">Logan Utah Temple</option>
+        <option value="Manti Utah Temple">Manti Utah Temple</option>
+        <option value="Mexico City Temple">Mexico City Temple</option>
+        <option value="Mesa Arizona Temple">Mesa Arizona Temple</option>
+        <option value="Philadelphia Pennsylvania Temple">Philadelphia Pennsylvania Temple</option>
+        <option value="Rome Italy Temple">Rome Italy Temple</option>
+        <option value="Salt Lake Temple">Salt Lake Temple</option>
+        <option value="Sapporo Japan Temple">Sapporo Japan Temple</option>
+        <option value="Tijuana Mexico Temple">Tijuana Mexico Temple</option>
+        <option value="Yigo Guam Temple">Yigo Guam Temple</option>
+      </select>
+      
+      <label for="experience">Your Experience:</label>
+      <textarea id="experience" name="experience" rows="5" required></textarea>
+
+      <button type="submit">Submit Experience</button>
+    </form>
+
+    <p id="submissionCount"></p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Mauricio Vera - Temple Pathways</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/form.js"></script>
+</body>
+</html>
